@@ -1,13 +1,16 @@
-# Maina Saturday Win
+# Maina Saturday Win (ML-Enhanced)
 
-This repository contains a set of 50 Saturday Lotto predictions generated using a hybrid adaptive strategy:
+This version includes an integrated Random Forest machine learning model trained on Saturday Lotto historical draws.
 
-## 🔧 Features:
-- **Dynamic hot/cold trend analysis** (from recent draws)
-- **Cycling of strategy types**: Hot-favored, Cold-favored, and Balanced (Blend)
-- **Flexible filtering thresholds** per strategy based on statistical trends
+## 🔍 Features
+- Upload new results to auto-extend training data
+- Auto re-trains model on updated dataset
+- Scores new predictions using extracted statistical features
+- Ranks predictions by Division 1–3 likelihood (proxy)
 
-Each prediction set follows one of three adaptive modes and ensures diversity and trend compliance.
-
-## Files:
-- `Maina_Saturday_Win_Predictions.csv`: 50 hot/cold adaptive predictions
+## 🔧 Structure
+- `streamlit_app.py` - Upload interface and predictions
+- `prediction_engine.py` - Extracts features + applies ML model
+- `model_trainer.py` - Re-trains ML model with new historical data
+- `data/` - Contains historical results
+- `models/` - Stores trained model
