@@ -1,1 +1,1 @@
-# streamlit app placeholder
+# streamlit app entry point placeholder
