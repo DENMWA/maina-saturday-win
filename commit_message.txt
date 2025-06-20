@@ -1,1 +1,6 @@
-Initial commit for Maina Saturday Win - Adaptive hybrid prediction strategy with 50 sets.
+Integrate ML scoring and fix missing dependency for Maina Saturday Win
+
+- Added joblib and scikit-learn to requirements.txt for model loading
+- Ensures compatibility with Streamlit Cloud
+- App now scores prediction sets using trained Random Forest model
+- Displays ranked predictions with Division-likelihood probabilities
